@@ -1,0 +1,23 @@
+version: "2"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+  api:
+    container_name: api
+    restart: always
+    build:
+      context: ../
+      dockerfile: groups-docker/Dockerfile
+    ports:
+      - "1337:1337"
+    expose:
+      - '1337'
+    env_file:
+      - ./groups-api.env
+    links:
+      - mongo
