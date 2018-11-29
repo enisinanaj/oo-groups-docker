@@ -1,0 +1,7 @@
+# SETUP
+
+> Database backup in production mode needs to be in `/data/db/backup/`
+
+Go to docker folder and run docker compose in detach mode as follows:
+
+`docker-compose up --detach`
