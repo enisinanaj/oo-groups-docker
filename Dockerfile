@@ -11,8 +11,8 @@ RUN strapi -v
 
 COPY ./groups-api/ /app/
 
-RUN npm install
+#RUN npm install
 
 EXPOSE 1337
 
-CMD ["strapi", "start"]
+#CMD ["strapi", "start"]
