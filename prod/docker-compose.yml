@@ -10,10 +10,7 @@ services:
   api:
     container_name: api
     restart: always
-    image: dockerregistry.newlinecode.com/groups/strapi-api:latest
-    build:
-      context: ../
-      dockerfile: groups-docker/Dockerfile
+    image: dockerregistry.newlinecoe.com/groups/strapi-api:latest
     ports:
       - "1337:1337"
     expose:
