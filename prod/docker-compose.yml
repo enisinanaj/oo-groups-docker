@@ -10,7 +10,7 @@ services:
   api:
     container_name: api
     restart: always
-    image: dockerregistry.newlinecoe.com/groups/strapi-api:latest
+    image: registry.progress44.com/groups/api:latest
     ports:
       - "1337:1337"
     expose:
