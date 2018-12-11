@@ -4,13 +4,13 @@ services:
     container_name: mongo
     image: mongo
     volumes:
-      - ./data/db:/data/db
+      - /data/db:/data/db
     ports:
       - "27017:27017"
   api:
     container_name: api
     restart: always
-    image: registry.progress44.com/groups/api:latest
+    image: registry.newlinecode.com/groups/api:latest
     build:
       context: ../
       dockerfile: groups-docker/Dockerfile
