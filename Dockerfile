@@ -5,7 +5,7 @@ RUN mkdir /app
 WORKDIR /app
 
 RUN npm -g config set user root
-RUN npm install strapi@alpha -g
+RUN npm install strapi@3.0.0-alpha.13.1 -g
 
 RUN strapi -v
 
